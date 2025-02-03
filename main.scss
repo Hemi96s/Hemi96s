@@ -1,0 +1,87 @@
+
+body{
+    background: #BDC0BA;
+    
+}
+
+// navBar
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navBarLeft{
+      
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 25px;
+            color: aliceblue;
+        
+    }
+ 
+        background-color: #4F4F48;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    .navBarRight{
+        a{
+            text-decoration: none;
+            margin-left: 36px;
+            font-weight: 500;
+            color: aliceblue;
+            transition: .1s;
+       
+        }
+        a:hover{
+            color: rgb(68, 104, 136);
+        }
+    
+    }
+}
+
+// 鏡面設計
+.broadcastingDesign{
+    display: flex;
+    justify-content: center;
+    .broadcastingDesignCard{
+        width: 320px;
+        height: auto;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 1px 3px rgba(82, 82, 82, 0.16);
+        background-color: #fff;
+ 
+        img{
+            width: 320px;
+            height: 180px;
+            max-width: 100%;
+            object-fit: cover;
+
+
+        }
+
+        .broadcastingDesignCardDetail{
+            line-height: 22px;
+           min-height: 112px;
+            position: relative;
+            padding: 1.2rem 0.7rem 2rem 1.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+           
+            h3{
+               font-size: 28px;
+               font-weight: 600;
+               margin-bottom: 8px;
+               color: #4F4F48;
+            }
+            h4{
+                color: #4F4F48;
+                font-weight: 500;
+            }
+            p{
+                color: #8d8d8d;
+            }
+        }
+    }
+}
