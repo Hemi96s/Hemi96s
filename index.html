@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hemi96s</title>
-
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward"
+    />
     <!-- google字型 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,17 +43,22 @@
           <a href="">鏡面設計</a>
           <a href="">短影音</a>
           <a href="">影片後製</a>
-          <a href="">語言證書</a>
         </nav>
       </div>
       <!-- 主畫面Header -->
       <header>
-        <span class="circle circle-1"></span>
-        <span class="circle circle-2"></span>
-        <span class="circle circle-3"></span>
+ 
         <img src="./image/Layer 1.png" alt="Banner大圖片" />
         <span class="text-experience"></span>
         <h1>新聞製播<br />短影音<br />ワーホリ</h1>
+
+        <div class="toolImg">
+         
+          <img src="/image/photoshop.png" alt="">
+          <img src="/image/illustrator.png" alt="">
+          <img src="/image/after-effects.png" alt="">
+          <img src="/image/premiere-pro.png" alt="">
+        </div>
       </header>
 
       <!-- 鏡面設計 -->
@@ -48,9 +66,10 @@
         <div class="broadcastingDesignHeader">
           <h2>鏡面設計</h2>
         </div>
-        <div class="broadcastingDesignCardAll">
-          <!-- 鏡面設計作品1 -->
-          <div class="broadcastingDesignCard">
+        <div class="swiper">
+          <div class="swiper-wrapper broadcastingDesignCardAll">
+            <!-- 鏡面設計作品1 -->
+            <div class="swiper-slide broadcastingDesignCard " >
             <img src="/image/作品集/雙框_00000.png" alt="" />
             <div class="broadcastingDesignCardDetail">
               <h3>金馬奔騰2020</h3>
@@ -63,7 +82,7 @@
           <!-- 鏡面設計作品1End -->
 
           <!-- 鏡面設計作品2 -->
-          <div class="broadcastingDesignCard">
+          <div class="swiper-slide broadcastingDesignCard">
             <img src="/image/作品集/雙框_00000.png" alt="" />
             <div class="broadcastingDesignCardDetail">
               <h3>牛年如意</h3>
@@ -76,7 +95,7 @@
           <!-- 鏡面設計作品2End -->
 
           <!-- 鏡面設計作品3 -->
-          <div class="broadcastingDesignCard">
+          <div class="swiper-slide broadcastingDesignCard swiper-slide">
             <img src="/image/作品集/雙框_00000.png" alt="" />
             <div class="broadcastingDesignCardDetail">
               <h3>五一勞動別大疫</h3>
@@ -89,7 +108,7 @@
           <!-- 鏡面設計作品3End -->
 
           <!-- 鏡面設計作品4 -->
-          <div class="broadcastingDesignCard">
+          <div class="swiper-slide broadcastingDesignCard">
             <img src="/image/作品集/雙框_00000.png" alt="" />
             <div class="broadcastingDesignCardDetail">
               <h3>推播圖卡</h3>
@@ -100,109 +119,129 @@
             </div>
           </div>
           <!-- 鏡面設計作品4End -->
-        </div>
 
-        <!-- 空白 -->
+      
+        </div>
+     
+        <div class="swiper-button-prev"  tabindex="0" ></div>
+        <div class="swiper-button-next"  tabindex="0" ></div>
       </div>
 
-      <!-- Line -->
-      <div class="grayLine"></div>
+      <!-- 空白 -->
+    </div>
 
-      <!-- 短影音 -->
-      <div class="shortsDesign">
-        <div>
-          <div class="shortsDesignHeader">
-            <h2>短影音</h2>
-            <h4>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              iure iusto velit in architecto quo itaque reprehenderit
-              distinctio, magnam saepe?
-            </h4>
-          </div>
+    <!-- Line -->
+    <div class="grayLine"></div>
+
+    <!-- 短影音 -->
+    <div class="shortsDesign">
+      <div>
+        <div class="shortsDesignHeader">
+          <h2>短影音</h2>
+          <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            iure iusto velit in architecto quo itaque reprehenderit distinctio,
+            magnam saepe?
+          </h4>
+        </div>
+        <div class="shortsDesignLeftWrap">
           <div class="shortsDesignLeft">
             <!-- 放設計圖 -->
-            <img src="" alt="" />
+            <img src="/image/作品集/0525_01.png" alt="" />
+            <img src="/image/作品集/S4EP5(REELS)DEMO.png" alt="" />
           </div>
           <div class="shortsDesignRight">
-            <h2>小編在那邊</h2>
-            <h3>官方網站連結</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ex
-              tempora blanditiis dolor vero dolore quidem illo optio voluptate
-              ducimus.
-            </p>
-            <h3>其他製作素材</h3>
-            <img src="" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Line -->
-      <div class="grayLine"></div>
-
-      <!-- 影片後製 -->
-      <div class="effects">
-        <div class="effectsDesign01">
-          <img src="" alt="" />
-          <div>
-            <h3>台灣NEXT</h3>
-            <p></p>
-            <a
-              href="https://youtu.be/J3hNBnRx96I?si=sV5iXnvNKNT03Jsx&t=2184"
-              target="_blank"
-              >火山範圍示意</a
-            >
-            <a
-              href="https://youtu.be/J3hNBnRx96I?si=Ajfd9pgMFFHMVvAA&t=1700"
-              target="_blank"
-              >土壤液化示意</a
-            >
-          </div>
-        </div>
-        <div class="effectsDesign02">
-          <img src="" alt="" />
-          <div>
-            <h3>台灣啟示錄</h3>
-            <p></p>
-            <a
-              href="https://youtu.be/k9Y5rZfr9Y4?si=WGJ4C5_p9CdbfpbH&t=301"
-              target="_blank"
-            ></a>
-          </div>
-        </div>
-        <div class="effectsDesign03">
-          <img src="" alt="" />
-          <div>
-            <h3>澹廬 ‧ 心畫 ‧ 書道禪—曹秋圃書藝展｜2022創價藝文</h3>
-            <p></p>
-            <a
-              href="https://www.youtube.com/watch?v=9FaPcQls92o"
-              target="_blank"
-              >看作品</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- 語言證書 -->
-      <div class="languageArea">
-        <div>
-          <img src="" alt="" />
-          <div>
-            <h3>Toeic Listening and Reading Test</h3>
-            <img src="" alt="" />
-          </div>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <div>
-            <h3>日本語能力試驗JLPT</h3>
-            <img src="" alt="" />
+            <!-- <h2>小編在那邊</h2>
+              <h3>官方網站連結</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ex
+                tempora blanditiis dolor vero dolore quidem illo optio voluptate
+                ducimus.
+              </p>
+              <h3>其他製作素材</h3> -->
+            <img src="/image/作品集/s4ep7(A)2-4DEMO.png" alt="" />
+            <img src="/image/作品集/s4ep7(A)2-4DEMO.png" alt="" />
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Line -->
+    <div class="grayLine"></div>
+
+    <!-- 影片後製 -->
+    <div class="effects">
+      <div class="effectsHeader">
+        <h2>影片後製</h2>
+      </div>
+<div class="swiper">
+
+  <div class="swiper-wrapper effectsDesignCardAll">
+    <div class="swiper-slide effectsDesignCard">
+      <img src="./image/作品集/BG_pink.png" alt="" />
+      <div class="effectsDesignCardDetail">
+        <h3>台灣NEXT</h3>
+        <p>火山</p>
+
+        <a
+          href="https://youtu.be/J3hNBnRx96I?si=sV5iXnvNKNT03Jsx&t=2184"
+          target="_blank"
+          >火山範圍示意</a
+        >
+      </div>
+    </div>
+    <div class="swiper-slide effectsDesignCard">
+      <img src="./image/作品集/BG_pink.png" alt="" />
+      <div class="effectsDesignCardDetail">
+        <h3>台灣NEXT</h3>
+        <p>土壤液化</p>
+
+        <a
+          href="https://youtu.be/J3hNBnRx96I?si=Ajfd9pgMFFHMVvAA&t=1700"
+          target="_blank"
+          >土壤液化示意</a
+        >
+      </div>
+    </div>
+
+    <div class="swiper-slide effectsDesignCard">
+      <img src="./image/作品集/BG_pink.png" alt="" />
+      <div class="effectsDesignCardDetail">
+        <h3>台灣啟示錄</h3>
+        <p></p>
+        <a
+          href="https://youtu.be/k9Y5rZfr9Y4?si=WGJ4C5_p9CdbfpbH&t=301"
+          target="_blank"
+        ></a>
+      </div>
+    </div>
+    <div class="swiper-slide effectsDesignCard">
+      <img src="./image/作品集/BG_pink.png" alt="" />
+      <div class="effectsDesignCardDetail">
+        <h3>澹廬 ‧ 心畫 ‧ 書道禪</h3>
+        <p></p>
+        <a
+          href="https://www.youtube.com/watch?v=9FaPcQls92o"
+          target="_blank"
+          >看作品</a
+        >
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="swiper-button-prev"  ></div>
+    <div class="swiper-button-next"  ></div>
+</div>
+    </div>
+
+    <footer>
+      <p>copyright</p>
+    </footer>
+
     <!-- js -->
     <script src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/scrpt.js"></script>
   </body>
 </html>

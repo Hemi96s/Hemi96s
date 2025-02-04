@@ -4,11 +4,17 @@ body{
     
 }
 
+
+
 // navBar
 .navBar{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #4F4F48;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
     .navBarLeft{
       
             text-decoration: none;
@@ -18,10 +24,7 @@ body{
         
     }
  
-        background-color: #4F4F48;
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
+ 
     .navBarRight{
         a{
             text-decoration: none;
@@ -38,18 +41,26 @@ body{
     }
 }
 
+
+
 .grayLine{
     height: 8px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-// 鏡面設計
-.broadcastingDesign{
+
+
+
+
+// 鏡面設計、影片後製
+.broadcastingDesign,.effects{
+  
     padding-top: 78px;
     padding-bottom: 80px;
-    
+    height: auto;
+    background-color: #fff;
 
-    .broadcastingDesignHeader{
+    .broadcastingDesignHeader,.effectsHeader{
     
         h2{
             font-size: 32px;
@@ -57,30 +68,42 @@ body{
             text-align: center;
             margin-bottom: 56px;
         }
+        h4{
+            padding-top: 16px;
+            font-size: 18px;
+            text-align: center;
+        }
      
     }
-    .broadcastingDesignCardAll{
-        display: flex;
-        justify-content: center;
-        .broadcastingDesignCard{
-            width: 320px;
+.swiper{
+    position: relative;
+    overflow: initial;
+    width: calc(100% -10%);
+    margin: auto;
+ 
+    .broadcastingDesignCardAll,.effectsDesignCardAll{
+       
+      
+        .broadcastingDesignCard,.effectsDesignCard{
+           
+            width: 480px;
             height: auto;
             border-radius: 12px;
             overflow: hidden;
             position: relative;
             box-shadow: 0 1px 3px rgba(82, 82, 82, 0.16);
             background-color: #fff;
-     
+            margin-right: 4px;
             img{
-                width: 320px;
-                height: 180px;
+                width: 480px;
+                height: 270px;
                 max-width: 100%;
                 object-fit: cover;
     
     
             }
     
-            .broadcastingDesignCardDetail{
+            .broadcastingDesignCardDetail,.effectsDesignCardDetail{
                 line-height: 22px;
                min-height: 112px;
                 position: relative;
@@ -104,8 +127,24 @@ body{
                 }
             }
         }
+        
     }
+    
 }
+
+.swiper-button-prev,.swiper-button-next{
+
+color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    margin: auto;
+ 
+    cursor: pointer;
+  
+}
+    }
+
 
 // 短影音
 .shortsDesign{
@@ -122,6 +161,37 @@ body{
             text-align: center;
         }
     }
-    .shortsDesignLeftP{}
-    .shortsDesignRightP{}
+    .shortsDesignLeftWrap{
+        display: flex;
+        justify-content: center;
+
+        .shortsDesignLeft{
+            // margin-right: 20px;
+            img{
+                width: 420px;
+                margin-right: 12px;
+            }
+    
+        }
+        .shortsDesignRight{
+            img{
+                display: flex;
+                width: 653px;
+                margin-bottom: 12px;
+            }
+    
+        }
+    }
 }
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    background-color: #4F4F48;
+}
+

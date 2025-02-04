@@ -33,37 +33,47 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.broadcastingDesign {
+.broadcastingDesign, .effects {
   padding-top: 78px;
   padding-bottom: 80px;
+  height: auto;
+  background-color: #fff;
 }
-.broadcastingDesign .broadcastingDesignHeader h2 {
+.broadcastingDesign .broadcastingDesignHeader h2, .broadcastingDesign .effectsHeader h2, .effects .broadcastingDesignHeader h2, .effects .effectsHeader h2 {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 56px;
 }
-.broadcastingDesign .broadcastingDesignCardAll {
-  display: flex;
-  justify-content: center;
+.broadcastingDesign .broadcastingDesignHeader h4, .broadcastingDesign .effectsHeader h4, .effects .broadcastingDesignHeader h4, .effects .effectsHeader h4 {
+  padding-top: 16px;
+  font-size: 18px;
+  text-align: center;
 }
-.broadcastingDesign .broadcastingDesignCardAll .broadcastingDesignCard {
-  width: 320px;
+.broadcastingDesign .swiper, .effects .swiper {
+  position: relative;
+  overflow: initial;
+  width: 90%;
+  margin: auto;
+}
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard, .effects .swiper .effectsDesignCardAll .effectsDesignCard {
+  width: 480px;
   height: auto;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
   box-shadow: 0 1px 3px rgba(82, 82, 82, 0.16);
   background-color: #fff;
+  margin-right: 4px;
 }
-.broadcastingDesign .broadcastingDesignCardAll .broadcastingDesignCard img {
-  width: 320px;
-  height: 180px;
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard img, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard img, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard img, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard img, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard img, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard img, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard img, .effects .swiper .effectsDesignCardAll .effectsDesignCard img {
+  width: 480px;
+  height: 270px;
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.broadcastingDesign .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail {
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail {
   line-height: 22px;
   min-height: 112px;
   position: relative;
@@ -72,18 +82,25 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.broadcastingDesign .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h3 {
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h3, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h3, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h3, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail h3, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h3, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h3, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h3, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail h3, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h3, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h3, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h3, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail h3, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h3, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h3, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h3, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail h3 {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 8px;
   color: #4F4F48;
 }
-.broadcastingDesign .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h4 {
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h4, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h4, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h4, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail h4, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h4, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h4, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h4, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail h4, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h4, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h4, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h4, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail h4, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h4, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h4, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h4, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail h4 {
   color: #4F4F48;
   font-weight: 500;
 }
-.broadcastingDesign .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p {
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail p, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail p, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail p, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail p {
   color: #8d8d8d;
+}
+.broadcastingDesign .swiper-button-prev, .broadcastingDesign .swiper-button-next, .effects .swiper-button-prev, .effects .swiper-button-next {
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+  cursor: pointer;
 }
 
 .shortsDesign {
@@ -98,4 +115,22 @@ body {
   padding-top: 16px;
   font-size: 18px;
   text-align: center;
+}
+.shortsDesign .shortsDesignLeftWrap {
+  display: flex;
+  justify-content: center;
+}
+.shortsDesign .shortsDesignLeftWrap .shortsDesignLeft img {
+  width: 420px;
+  margin-right: 12px;
+}
+.shortsDesign .shortsDesignLeftWrap .shortsDesignRight img {
+  display: flex;
+  width: 653px;
+  margin-bottom: 12px;
+}
+
+footer {
+  width: 100%;
+  background-color: #4F4F48;
 }/*# sourceMappingURL=main.css.map */
