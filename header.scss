@@ -1,0 +1,47 @@
+header{
+    display: flex;
+
+    justify-content: center;
+
+    img{
+        width:220px;
+        z-index: 2;
+    }
+   
+}
+
+ .toolImg{
+        display: flex;
+        justify-content: center;
+        position: relative;     
+        border: solid 5px#dddddd;
+                .bgcImg{
+                  z-index: 100;            
+                  position: absolute;
+                  background-color: #002f86;
+                  height: 100%;
+         
+                  display: flex;
+                  justify-content: center;
+                  bottom: 50px;
+                  img{
+                  
+                      margin-left: 10px;
+                      margin-right: 10px;
+                        height: 105px;
+                        width:105px;
+                        border:solid 1px #f8f8f8 ;
+                        border-radius: 25%;
+                         box-shadow:(0px 5px 3px rgba(85, 85, 85, 0.5));
+                    }
+                }
+     
+
+ }
+
+  
+ @media(max-width: 768px){
+  .toolImg{
+    display: none;
+  }
+ }

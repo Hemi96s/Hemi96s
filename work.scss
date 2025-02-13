@@ -1,0 +1,39 @@
+@import "/reset.css";
+
+body{
+   background-color: rgb(32, 32, 32);
+}
+.mainWorks{
+
+
+margin: 20px auto;
+
+
+    .swiper{
+               height: 900px;
+    
+        .swiper-wrapper{
+
+            .swiper-slide{
+               
+                display: flex;
+                justify-content: center;
+
+                img{ 
+               
+               
+                }
+                .centerBar{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        object-fit: contain;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+

@@ -1,47 +1,69 @@
 body {
-  background: #BDC0BA;
+  background: #e9e9e9;
+  font-family: "Philosopher", serif;
+  font-family: "Kanit", serif;
 }
 
 .navBar {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  background-color: #4F4F48;
+  background-color: #dddddd;
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
 .navBar .navBarLeft {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 25px;
-  color: aliceblue;
 }
-.navBar .navBarRight a {
+.navBar .navBarRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar .navBarRight li h1 a {
+  color: #222222;
+  font-family: "Philosopher", serif;
+  font-size: 36px;
   text-decoration: none;
   margin-left: 36px;
-  font-weight: 500;
-  color: aliceblue;
+  margin-bottom: 20px;
   transition: 0.1s;
+  font-weight: 900;
 }
-.navBar .navBarRight a:hover {
-  color: rgb(68, 104, 136);
+.navBar .navBarRight li a {
+  font-family: "Kanit", serif;
+  color: #222222;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 50px;
+  transition: 0.1s;
+  text-align: center;
+}
+.navBar .navBarRight li a:hover {
+  color: #8E8D8A;
+}
+.navBar .navBarPhone {
+  display: none;
 }
 
 .grayLine {
   height: 8px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #dddddd;
 }
 
 .broadcastingDesign, .effects {
+  overflow-x: hidden;
   padding-top: 78px;
   padding-bottom: 80px;
   height: auto;
-  background-color: #fff;
+  background-color: #f8f8f8;
 }
 .broadcastingDesign .broadcastingDesignHeader h2, .broadcastingDesign .effectsHeader h2, .effects .broadcastingDesignHeader h2, .effects .effectsHeader h2 {
-  font-size: 32px;
-  font-weight: 700;
+  font-family: "Kanit", serif;
+  color: #222222;
+  font-size: 56px;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 56px;
 }
@@ -53,7 +75,7 @@ body {
 .broadcastingDesign .swiper, .effects .swiper {
   position: relative;
   overflow: initial;
-  width: 90%;
+  width: calc(95% - 10px);
   margin: auto;
 }
 .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard, .effects .swiper .effectsDesignCardAll .effectsDesignCard {
@@ -66,6 +88,9 @@ body {
   background-color: #fff;
   margin-right: 4px;
 }
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard a, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard a, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard a, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard a, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard a, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard a, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard a, .effects .swiper .effectsDesignCardAll .effectsDesignCard a {
+  text-decoration: none;
+}
 .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard img, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard img, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard img, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard img, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard img, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard img, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard img, .effects .swiper .effectsDesignCardAll .effectsDesignCard img {
   width: 480px;
   height: 270px;
@@ -74,26 +99,44 @@ body {
      object-fit: cover;
 }
 .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail {
-  line-height: 22px;
   min-height: 112px;
   position: relative;
-  padding: 1.2rem 0.7rem 2rem 1.4rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  position: relative;
 }
 .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h3, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h3, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h3, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail h3, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h3, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h3, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h3, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail h3, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h3, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h3, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h3, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail h3, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h3, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h3, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h3, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail h3 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #4F4F48;
-}
-.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h4, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h4, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h4, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail h4, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h4, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h4, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h4, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail h4, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h4, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h4, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h4, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail h4, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail h4, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail h4, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail h4, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail h4 {
-  color: #4F4F48;
-  font-weight: 500;
+  font-family: "Kanit", serif;
+  color: #222222;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail p, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail p, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail p, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail p {
-  color: #8d8d8d;
+  font-family: "Kanit", serif;
+  color: #8E8D8A;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 24px;
+}
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p span, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p span, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p span, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail p span, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p span, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p span, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p span, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail p span, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p span, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p span, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p span, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail p span, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail p span, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail p span, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail p span, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail p span {
+  font-family: "Kanit", serif;
+  color: #8E8D8A;
+  font-size: 18px;
+  font-weight: 500;
+}
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick a, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick a, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick a, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick a, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick a, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick a, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick a, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick a, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick a, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick a, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick a, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick a, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick a, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick a, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick a, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick a {
+  padding-top: 20px;
+  text-decoration: none;
+}
+.broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick a:visited, .broadcastingDesign .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick a:visited, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick a:visited, .broadcastingDesign .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick a:visited, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick a:visited, .broadcastingDesign .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick a:visited, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick a:visited, .broadcastingDesign .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick a:visited, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick a:visited, .effects .swiper .broadcastingDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick a:visited, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick a:visited, .effects .swiper .broadcastingDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick a:visited, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .broadcastingDesignCardDetail .linkClick a:visited, .effects .swiper .effectsDesignCardAll .broadcastingDesignCard .effectsDesignCardDetail .linkClick a:visited, .effects .swiper .effectsDesignCardAll .effectsDesignCard .broadcastingDesignCardDetail .linkClick a:visited, .effects .swiper .effectsDesignCardAll .effectsDesignCard .effectsDesignCardDetail .linkClick a:visited {
+  color: #b3b3b3;
 }
 .broadcastingDesign .swiper-button-prev, .broadcastingDesign .swiper-button-next, .effects .swiper-button-prev, .effects .swiper-button-next {
   color: #ffffff;
@@ -104,33 +147,222 @@ body {
 }
 
 .shortsDesign {
+  overflow-x: hidden;
+  background-color: #222222;
   padding-top: 88px;
+  padding-bottom: 88px;
+}
+.shortsDesign .shortsDesignHeader {
+  color: #f8f8f8;
 }
 .shortsDesign .shortsDesignHeader h2 {
-  font-size: 32px;
-  font-weight: 700;
+  font-family: "Kanit", serif;
+  color: #f8f8f8;
+  font-size: 56px;
+  font-weight: 600;
   text-align: center;
+  margin-bottom: 24px;
 }
 .shortsDesign .shortsDesignHeader h4 {
   padding-top: 16px;
   font-size: 18px;
   text-align: center;
+  line-height: 24px;
 }
-.shortsDesign .shortsDesignLeftWrap {
+.shortsDesign .shortsDesignHeader .shortsDesignPhoneSpan {
+  display: none;
+  color: #f8f8f8;
+}
+.shortsDesign .shortsDesignHeader .shortsDesignPhoneSpan a {
+  color: #f8f8f8;
+  text-decoration: none;
+  background-color: #4e0000;
+}
+.shortsDesign .shortsDesignHeader .shortsDesignPhoneSpan a:hover {
+  cursor: pointer;
+  background-color: #aa0000;
+}
+.shortsDesign .shortsDesignMain {
+  width: 100vw;
+  margin: 10px auto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
-.shortsDesign .shortsDesignLeftWrap .shortsDesignLeft img {
-  width: 420px;
-  margin-right: 12px;
+.shortsDesign .shortsDesignMain .shortsDesignRight .shortsDesignRightContain {
+  position: relative;
+  width: 850px;
+  max-height: 640px;
+  background-color: #222222;
 }
-.shortsDesign .shortsDesignLeftWrap .shortsDesignRight img {
-  display: flex;
-  width: 653px;
-  margin-bottom: 12px;
+.shortsDesign .shortsDesignMain .shortsDesignRight .shortsDesignRightContain h5 {
+  color: #f8f8f8;
+  font-family: "Kanit", serif;
+  font-size: 30px;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+.shortsDesign .shortsDesignMain .shortsDesignRight .shortsDesignRightContain p {
+  font-family: "Kanit", serif;
+  margin-bottom: 6px;
+  font-size: 18px;
+  padding-left: 2rem;
+  color: #f8f8f8;
+  line-height: 1.2rem;
+}
+.shortsDesign .shortsDesignMain .shortsDesignRight .shortsDesignRightContain .picturePik {
+  max-height: 640px;
+}
+.shortsDesign .shortsDesignMain .shortsDesignRight .shortsDesignRightContain .picturePik img {
+  bottom: 0;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 footer {
   width: 100%;
-  background-color: #4F4F48;
+  text-align: center;
+  background-color: #dddddd;
+}
+footer p {
+  color: #222222;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    z-index: 6;
+    align-items: center;
+    background-color: dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .navBar .navBarLeft {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    color: #f8f8f8;
+  }
+  .navBar .navBarRight {
+    display: none;
+  }
+  .navBar .hamburger {
+    z-index: 7;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+  }
+  .navBar .hamburger .bar {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #222222;
+    margin: 6px 0px;
+  }
+  .navBar .hamburger::after, .navBar .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #222222;
+    margin: 6px 0px;
+  }
+  .navBar .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  .navBar .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  .navBar .hamburger.is-active .bar {
+    opacity: 0;
+  }
+  .navBar .navBarPhone {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 5;
+    background-color: #8E8D8A;
+    padding-top: 120px;
+    overflow: hidden;
+  }
+  .navBar .navBarPhone a {
+    font-family: "Kanit", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #dddddd;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: #383838;
+    border: solid 1px #383838;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 20px 36px 20px 36px;
+  }
+  .navBar .navBarPhone a:hover {
+    font-family: "Kanit", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #383838;
+    background-color: #b8b8b8;
+    border: solid 1px #383838;
+    border-radius: 5px;
+    padding: 20px 36px 20px 36px;
+  }
+  .navBar .navBarPhone.is-active {
+    left: 0;
+  }
+  .shortsDesign {
+    background-color: #dddddd;
+    padding-top: 88px;
+  }
+  .shortsDesign .shortsDesignHeader h2 {
+    color: #222222;
+  }
+  .shortsDesign .shortsDesignHeader .shortsDesignPhoneSpan {
+    font-family: "Kanit", serif;
+    font-size: 18px;
+    margin-top: 20px;
+    display: block;
+    color: #222222;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+  .shortsDesign .shortsDesignHeader .shortsDesignPhoneSpan a {
+    color: #dddddd;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    background-color: #222222;
+    border-radius: 3px;
+  }
+  .shortsDesign .shortsDesignHeader .shortsDesignPhoneSpan a:hover {
+    cursor: pointer;
+    background-color: #383838;
+    border-radius: 3px;
+  }
+  .shortsDesign .shortsDesignMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shortsDesign .shortsDesignMain .shortsDesignRight {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

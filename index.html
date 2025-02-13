@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hemi96s</title>
+    <!-- 網頁LOGO -->
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="bookmark" href="/favicon.ico" />
     <!-- swiper -->
     <link
       rel="stylesheet"
@@ -18,149 +21,219 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward"
     />
-    <!-- google字型 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- google字型 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+TC:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- CSS樣式 -->
     <link rel="stylesheet" href="all.css" />
   </head>
   <body>
     <div class="wrapper">
       <!-- navBar -->
-      <div class="navBar">
-        <a class="navBarLeft" href="#">Hemi</a>
-        <nav class="navBarRight">
-          <a href="">鏡面設計</a>
-          <a href="">短影音</a>
-          <a href="">影片後製</a>
+      <div class="navBar ">
+      
+        <ul class="navBarRight">
+          <li>
+            <h1>
+              <a class="navBarLeft" href="#">Hemi</a>
+            </h1>
+            
+            
+          </li>
+          <li><a href="#broadcastingDesign">鏡面設計</a></li>
+          <li><a href="#shortsDesign">短影音</a></li>
+          <li><a href="#effects">影片後製</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+        </div>
+        <nav class="navBarPhone">
+          <a href="#broadcastingDesign">鏡面設計</a>
+          <a href="#shortsDesign">短影音</a>
+          <a href="#effects">影片後製</a>
         </nav>
       </div>
+
       <!-- 主畫面Header -->
       <header>
- 
         <img src="./image/Layer 1.png" alt="Banner大圖片" />
-        <span class="text-experience"></span>
-        <h1>新聞製播<br />短影音<br />ワーホリ</h1>
-
-        <div class="toolImg">
-         
-          <img src="/image/photoshop.png" alt="">
-          <img src="/image/illustrator.png" alt="">
-          <img src="/image/after-effects.png" alt="">
-          <img src="/image/premiere-pro.png" alt="">
+        </header>
+      <div class="toolImg">
+        <div class="bgcImg">
+          <img src="/image/photoshop.png" alt="" />
+          <img src="/image/illustrator.png" alt="" />
+          <img src="/image/after-effects.png" alt="" />
+          <img src="/image/premiere-pro.png" alt="" />
+          <img src="/image/maya.svg" alt="" />
         </div>
-      </header>
-
+      </div>
       <!-- 鏡面設計 -->
-      <div class="broadcastingDesign">
+      <div id="broadcastingDesign" class="broadcastingDesign">
         <div class="broadcastingDesignHeader">
           <h2>鏡面設計</h2>
         </div>
         <div class="swiper">
           <div class="swiper-wrapper broadcastingDesignCardAll">
             <!-- 鏡面設計作品1 -->
-            <div class="swiper-slide broadcastingDesignCard " >
-            <img src="/image/作品集/雙框_00000.png" alt="" />
-            <div class="broadcastingDesignCardDetail">
-              <h3>金馬奔騰2020</h3>
-              <div>
-                <h4>播報金馬相關報導時替換的之鏡面</h4>
-                <p>動態包框、大標、側標、天標、 <br />說明框、訊息框......</p>
-              </div>
+            <div class="swiper-slide broadcastingDesignCard">
+              <a href="/work01.html" target="_blank">
+                <img src="/image/作品集/雙框_00000.png" alt="" />
+                <div class="broadcastingDesignCardDetail">
+                  <h3>金馬奔騰2020</h3>
+                  <p>
+                    編輯要求製作動態效果框形
+                    <br />因此嘗試AE的粒子特效營造氛圍感
+                  </p>
+                  <p><span>製作項目:</span>主題字設計、各類需求框形、標</p>
+                  <div>
+                 
+                   
+                    
+                    
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
-          <!-- 鏡面設計作品1End -->
+            <!-- 鏡面設計作品1End -->
+            <!-- 鏡面設計作品6 -->
+            <div class="swiper-slide broadcastingDesignCard">
+              <a href="/work06.html" target="_blank">
+                <img src="/image/06翻閱翻越-1.png" alt="" />
+                <div class="broadcastingDesignCardDetail">
+                  <h3>翻閱翻越</h3>
+                  <p>
+                    節目用的相關鏡面<br />
+                    製作人需求:文青風
+                  </p>
+                  <p><span>製作項目:</span>節目標準字設計、各類需求框形、標</p>
+                  <div>
+                  
+               
 
-          <!-- 鏡面設計作品2 -->
-          <div class="swiper-slide broadcastingDesignCard">
-            <img src="/image/作品集/雙框_00000.png" alt="" />
-            <div class="broadcastingDesignCardDetail">
-              <h3>牛年如意</h3>
-              <div>
-                <h4>牛年播報過年相關報導時替換的之鏡面</h4>
-                <p>動態包框、大標、側標、天標、 <br />說明框、訊息框......</p>
-              </div>
+                   
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
-          <!-- 鏡面設計作品2End -->
-
-          <!-- 鏡面設計作品3 -->
-          <div class="swiper-slide broadcastingDesignCard swiper-slide">
-            <img src="/image/作品集/雙框_00000.png" alt="" />
-            <div class="broadcastingDesignCardDetail">
-              <h3>五一勞動別大疫</h3>
-              <div>
-                <h4>五一勞動節遇上疫情而製作的小專案</h4>
-                <p>包框、大標、<br />說明框、訊息框......</p>
-              </div>
+            <!-- 鏡面設計作品6End -->
+            <!-- 鏡面設計作品2 -->
+            <div class="swiper-slide broadcastingDesignCard">
+              <a href="/work02.html" target="_blank">
+                <img src="/image/02元宵牛年如意包框.png" alt="" />
+                <div class="broadcastingDesignCardDetail">
+                  <h3>元宵．牛年如意</h3>
+                  <p>元宵節相關報導使用鏡面</p>
+                  <p><span>製作項目:</span>主題字設計、各類需求框形、標</p>
+                  <div>
+         
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
-          <!-- 鏡面設計作品3End -->
+            <!-- 鏡面設計作品2End -->
 
-          <!-- 鏡面設計作品4 -->
-          <div class="swiper-slide broadcastingDesignCard">
-            <img src="/image/作品集/雙框_00000.png" alt="" />
-            <div class="broadcastingDesignCardDetail">
-              <h3>推播圖卡</h3>
-              <div>
-                <h4>推播環節記者/主播用圖</h4>
-                <p>推播環節記者/主播用圖</p>
-              </div>
+            <!-- 鏡面設計作品3 -->
+            <div class="swiper-slide broadcastingDesignCard swiper-slide">
+              <a href="/work03.html" target="_blank">
+                <img src="/image/03五一勞動別大疫雙框.png" alt="" />
+                <div class="broadcastingDesignCardDetail">
+                  <h3>五一疫戰別大疫</h3>
+                  <p>
+                    勞動節碰上疫情 <br />
+                    相關報導使用之鏡面
+                  </p>
+                  <p><span>製作項目:</span>主題字設計、各類需求框形</p>
+                  <div>
+    
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
-          <!-- 鏡面設計作品4End -->
+            <!-- 鏡面設計作品3End -->
 
-      
+            <!-- 鏡面設計作品4 -->
+            <div class="swiper-slide broadcastingDesignCard">
+              <a href="/work04.html" target="_blank">
+                <img src="/image/04台灣戰疫AZ開打雙框.png" alt="" />
+                <div class="broadcastingDesignCardDetail">
+                  <h3>台灣戰疫AZ開打</h3>
+                  <p>
+                    台灣開始打首波疫苗 <br />
+                    相關報導使用之鏡面
+                  </p>
+                  <p><span>製作項目:</span>主題字設計、各類需求框形</p>
+                  <div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- 鏡面設計作品4End -->
+            <!-- 鏡面設計作品5 -->
+            <div class="swiper-slide broadcastingDesignCard">
+              <a href="/work05.html" target="_blank">
+                <img src="/image/05耶誕快樂包框.png" alt="" />
+                <div class="broadcastingDesignCardDetail">
+                  <h3>耶誕快樂</h3>
+                  <p>耶誕節相關報導使用鏡面</p>
+                  <p><span>製作項目:</span>主題字設計、各類需求框形、標、Bar頭</p>
+                  <div>
+
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- 鏡面設計作品5End -->
+          </div>
+
+          <div class="swiper-button-prev" tabindex="0"></div>
+          <div class="swiper-button-next" tabindex="0"></div>
         </div>
-     
-        <div class="swiper-button-prev"  tabindex="0" ></div>
-        <div class="swiper-button-next"  tabindex="0" ></div>
+
+        <!-- 空白 -->
       </div>
 
-      <!-- 空白 -->
-    </div>
+      <!-- Line -->
+      <div class="grayLine"></div>
 
-    <!-- Line -->
-    <div class="grayLine"></div>
-
-    <!-- 短影音 -->
-    <div class="shortsDesign">
-      <div>
-        <div class="shortsDesignHeader">
-          <h2>短影音</h2>
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            iure iusto velit in architecto quo itaque reprehenderit distinctio,
-            magnam saepe?
-          </h4>
-        </div>
-        <div class="shortsDesignLeftWrap">
-          <div class="shortsDesignLeft">
-            <!-- 放設計圖 -->
-            <img src="/image/作品集/0525_01.png" alt="" />
-            <img src="/image/作品集/S4EP5(REELS)DEMO.png" alt="" />
+      <!-- 短影音 -->
+      <div id="shortsDesign" class="shortsDesign">
+        <div >
+          <div class="shortsDesignHeader">
+            <h2>短影音</h2>
+            <span class="shortsDesignPhoneSpan">
+              頻道已有正片、需要短影音行銷、增加觸及。 <br />
+              因應不同平台而設計框形，短影音需要的鏡頭切換、字幕顯示。<br />
+              另有參與正片所需<a href="/image/Sh03短影png.jpg" target="_blank">花字及字卡</a>等等製作
+            </sapn>
+            <!-- <h4>頻道已有正片、需要短影音行銷、增加觸及。<br /></h4> -->
           </div>
-          <div class="shortsDesignRight">
-            <!-- <h2>小編在那邊</h2>
-              <h3>官方網站連結</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ex
-                tempora blanditiis dolor vero dolore quidem illo optio voluptate
-                ducimus.
-              </p>
-              <h3>其他製作素材</h3> -->
-            <img src="/image/作品集/s4ep7(A)2-4DEMO.png" alt="" />
-            <img src="/image/作品集/s4ep7(A)2-4DEMO.png" alt="" />
+
+          <div class="shortsDesignMain">
+            <div class="shortsDesignLeft">
+              <video
+                controls
+                src="/image/Sh01短影.mp4"
+                poster="/image/Sh01短影png.png"
+                width="360px"
+              ></video>
+            </div>
+            <div class="shortsDesignRight">
+              <div class="shortsDesignRightContain">
+                <h5>製作項目 :</h5>
+                <p>頻道已有正片、需要短影音行銷、增加觸及。  </p>
+                 <p> 因應不同平台而設計框形，短影音需要的鏡頭切換、字幕顯示。</p>      
+                <p> 另有參與正片所需花字及字卡等等製作</p>
+               
+                <div class="picturePik">
+                  <img src="./image/Sh03短影png.jpg" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -170,73 +243,109 @@
     <div class="grayLine"></div>
 
     <!-- 影片後製 -->
-    <div class="effects">
+    <div id="effects" class="effects">
       <div class="effectsHeader">
         <h2>影片後製</h2>
       </div>
-<div class="swiper">
+      <div class="swiper">
+        <div class="swiper-wrapper effectsDesignCardAll">
+          <div class="swiper-slide effectsDesignCard">
+            <a
+              href="https://youtu.be/J3hNBnRx96I?si=sV5iXnvNKNT03Jsx&t=2184"
+              target="_blank"
+            >
+              <img src="./image/Ae01.png" alt="" />
+              <div class="effectsDesignCardDetail">
+                <h3>台灣Next-火山</h3>
+                <p>
+                  嘗試使用Blender與Google Earth的搭配 <br />
+                  還原真實地形<br />
+                  最後進AE做合成與說明字的動畫輸出
+                </p>
+                <div class="linkClick">
+                  <a
+                    href="https://youtu.be/J3hNBnRx96I?si=sV5iXnvNKNT03Jsx&t=2184"
+                    target="_blank"
+                    >點擊看影片</a
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide effectsDesignCard">
+            <a
+              href="https://youtu.be/J3hNBnRx96I?si=Ajfd9pgMFFHMVvAA&t=1700"
+              target="_blank"
+            >
+              <img src="./image/Ae02.png" alt="" />
+              <div class="effectsDesignCardDetail">
+                <h3>台灣Next-土壤液化</h3>
+                <p>
+                  製作土壤液化示意畫面<br />
+                  素材編排PS完成後<br />
+                  進AE做動畫效果
+                </p>
+                <div class="linkClick">
+                  <a
+                    href="https://youtu.be/J3hNBnRx96I?si=Ajfd9pgMFFHMVvAA&t=1700"
+                    target="_blank"
+                    >點擊看影片</a
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
 
-  <div class="swiper-wrapper effectsDesignCardAll">
-    <div class="swiper-slide effectsDesignCard">
-      <img src="./image/作品集/BG_pink.png" alt="" />
-      <div class="effectsDesignCardDetail">
-        <h3>台灣NEXT</h3>
-        <p>火山</p>
+          <div class="swiper-slide effectsDesignCard">
+            <a
+              href="https://youtu.be/k9Y5rZfr9Y4?si=WGJ4C5_p9CdbfpbH&t=301"
+              target="_blank"
+            >
+              <img src="./image/Ae03.png" alt="" />
+              <div class="effectsDesignCardDetail">
+                <h3>台灣啟示錄-史上最大金庫竊案</h3>
+                <p>使用MAYA建構場景、運鏡 進AE做光效、字體動畫合成</p>
+                <div class="linkClick">
+                  <a
+                    href="https://youtu.be/k9Y5rZfr9Y4?si=WGJ4C5_p9CdbfpbH&t=301"
+                    target="_blank"
+                    >點擊看影片</a
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide effectsDesignCard">
+            <a
+              href="https://www.youtube.com/watch?v=9FaPcQls92o"
+              target="_blank"
+            >
+              <img src="./image/Ae04.png" alt="" />
+              <div class="effectsDesignCardDetail">
+                <h3>澹廬 ‧ 心畫 ‧ 書道禪</h3>
+                <p>
+                  製作潑墨效果的合成影片 <br />
+                  運用在片頭、介紹書法作品
+                </p>
+                <div class="linkClick">
+                  <a
+                    href="https://www.youtube.com/watch?v=9FaPcQls92o"
+                    target="_blank"
+                    >點擊看影片</a
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-        <a
-          href="https://youtu.be/J3hNBnRx96I?si=sV5iXnvNKNT03Jsx&t=2184"
-          target="_blank"
-          >火山範圍示意</a
-        >
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-    </div>
-    <div class="swiper-slide effectsDesignCard">
-      <img src="./image/作品集/BG_pink.png" alt="" />
-      <div class="effectsDesignCardDetail">
-        <h3>台灣NEXT</h3>
-        <p>土壤液化</p>
-
-        <a
-          href="https://youtu.be/J3hNBnRx96I?si=Ajfd9pgMFFHMVvAA&t=1700"
-          target="_blank"
-          >土壤液化示意</a
-        >
-      </div>
-    </div>
-
-    <div class="swiper-slide effectsDesignCard">
-      <img src="./image/作品集/BG_pink.png" alt="" />
-      <div class="effectsDesignCardDetail">
-        <h3>台灣啟示錄</h3>
-        <p></p>
-        <a
-          href="https://youtu.be/k9Y5rZfr9Y4?si=WGJ4C5_p9CdbfpbH&t=301"
-          target="_blank"
-        ></a>
-      </div>
-    </div>
-    <div class="swiper-slide effectsDesignCard">
-      <img src="./image/作品集/BG_pink.png" alt="" />
-      <div class="effectsDesignCardDetail">
-        <h3>澹廬 ‧ 心畫 ‧ 書道禪</h3>
-        <p></p>
-        <a
-          href="https://www.youtube.com/watch?v=9FaPcQls92o"
-          target="_blank"
-          >看作品</a
-        >
-      </div>
-    </div>
-    
-  </div>
-
-  <div class="swiper-button-prev"  ></div>
-    <div class="swiper-button-next"  ></div>
-</div>
     </div>
 
     <footer>
-      <p>copyright</p>
+      <p>Copyright©2025 Hemi96s</p>
     </footer>
 
     <!-- js -->
