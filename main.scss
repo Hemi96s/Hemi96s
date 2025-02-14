@@ -130,14 +130,14 @@ body{
 
 // 鏡面設計、影片後製
 
-.broadcastingDesign,.effects{
+.broadcastingDesign,.effects,.figmaWorks{
     overflow-x: hidden;
     padding-top: 78px;
     padding-bottom: 80px;
     height: auto;
     background-color: #f8f8f8;
 
-    .broadcastingDesignHeader,.effectsHeader{
+    .broadcastingDesignHeader,.effectsHeader,.figmaWorksHeader{
     
         h2{
             font-family: "Kanit", serif;
@@ -160,10 +160,10 @@ body{
     width: calc(95% - 10px);
     margin: auto;
  
-    .broadcastingDesignCardAll,.effectsDesignCardAll{
+    .broadcastingDesignCardAll,.effectsDesignCardAll,.figmaWorksDesignCardAll{
        
       
-        .broadcastingDesignCard,.effectsDesignCard{
+        .broadcastingDesignCard,.effectsDesignCard,.figmaWorksDesignCard{
            
             width: 480px;
             height: auto;
@@ -185,7 +185,7 @@ body{
     
             }
     
-            .broadcastingDesignCardDetail,.effectsDesignCardDetail{
+            .broadcastingDesignCardDetail,.effectsDesignCardDetail,.figmaDesignCardDetail{
      
                min-height: 112px;
                 position: relative;
