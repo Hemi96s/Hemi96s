@@ -58,7 +58,7 @@ margin: 20px auto;
 
 
     .swiper{
- width: 1660px;
+        width: 1660px;
         height: 900px;
     
         .swiper-wrapper{
@@ -86,4 +86,40 @@ margin: 20px auto;
     }
 }
 
+@media(max-width: 768px){
+    .mainWorks{
 
+
+       
+        
+            .swiper{
+                width: 384px;
+                height: 216px;
+  
+            
+                .swiper-wrapper{
+        
+                    .swiper-slide{
+                       
+                        display: flex;
+                        justify-content: center;
+        
+                        img{ 
+                       
+                       
+                        }
+                        .centerBar{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                width: 384px;
+                                height: 216px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+}
