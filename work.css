@@ -60,6 +60,7 @@ body {
   margin: 20px auto;
 }
 .mainWorks .swiper {
+  width: 1660px;
   height: 900px;
 }
 .mainWorks .swiper .swiper-wrapper .swiper-slide {
