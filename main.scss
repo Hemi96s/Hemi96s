@@ -362,6 +362,117 @@ color: #ffffff;
     }
         }
 
+        // 靜態CG
+           // 社群用圖
+    .DailyCG{
+        overflow-x: hidden;
+        padding-top: 78px;
+        padding-bottom: 80px;
+        height: auto;
+        background-color: #dddddd;
+    
+        .DailyCGHeader{
+        
+            h2{
+                font-family: "Kanit", serif;
+                color:#222222;
+                font-size: 56px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 56px;
+            }
+            h4{
+                padding-top: 16px;
+                font-size: 18px;
+                text-align: center;
+            }
+         
+        }
+    .swiper{
+        position: relative;
+        overflow: initial;
+        width: calc(95% - 10px);
+        margin: auto;
+     
+        .DailyCGaDetailCardAll{
+           
+          
+            .DailyCGCard{
+               
+                width: 480px;
+                height: auto;
+                border-radius: 12px;
+                overflow: hidden;
+                position: relative;
+                box-shadow: 0 1px 3px rgba(82, 82, 82, 0.16);
+                background-color: #fff;
+                margin-right: 4px;
+                a{
+                    text-decoration: none;
+                }
+                img{
+                    width: 480px;
+                    height: 270px;
+                    max-width: 100%;
+                    object-fit: cover;
+        
+        
+                }
+        
+                .DailyCGDetail{
+         
+               
+                    position: relative;
+                    padding: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                   
+                    h3{
+                        font-family: "Kanit", serif;
+                        color:#222222;
+                        font-size: 30px;
+                        font-weight: 700;
+                        // margin-bottom: 12px;
+                    }
+                   
+                    p{
+                        font-family: "Kanit", serif;
+                        color:#8E8D8A;
+                        font-size: 18px;
+                        font-weight:100;
+                        line-height: 24px;
+                        text-align: center;
+                       
+                        span{
+                            font-family: "Kanit", serif;
+                            color:#8E8D8A;
+                            font-size: 18px;
+                            font-weight:500;
+                                        
+                        }
+                        
+                    }
+    
+            }
+        }   
+        }
+        
+    }
+    
+    .swiper-button-prev,.swiper-button-next{
+    
+    color: #ffffff;
+        background-repeat: no-repeat;
+        background-size: contain;
+       
+        margin: auto;
+     
+        cursor: pointer;
+      
+    }
+        }
+
 // 短影音
 .shortsDesign{
     overflow-x: hidden;

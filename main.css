@@ -282,6 +282,87 @@ body {
   cursor: pointer;
 }
 
+.DailyCG {
+  overflow-x: hidden;
+  padding-top: 78px;
+  padding-bottom: 80px;
+  height: auto;
+  background-color: #dddddd;
+}
+.DailyCG .DailyCGHeader h2 {
+  font-family: "Kanit", serif;
+  color: #222222;
+  font-size: 56px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.DailyCG .DailyCGHeader h4 {
+  padding-top: 16px;
+  font-size: 18px;
+  text-align: center;
+}
+.DailyCG .swiper {
+  position: relative;
+  overflow: initial;
+  width: calc(95% - 10px);
+  margin: auto;
+}
+.DailyCG .swiper .DailyCGaDetailCardAll .DailyCGCard {
+  width: 480px;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(82, 82, 82, 0.16);
+  background-color: #fff;
+  margin-right: 4px;
+}
+.DailyCG .swiper .DailyCGaDetailCardAll .DailyCGCard a {
+  text-decoration: none;
+}
+.DailyCG .swiper .DailyCGaDetailCardAll .DailyCGCard img {
+  width: 480px;
+  height: 270px;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.DailyCG .swiper .DailyCGaDetailCardAll .DailyCGCard .DailyCGDetail {
+  position: relative;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.DailyCG .swiper .DailyCGaDetailCardAll .DailyCGCard .DailyCGDetail h3 {
+  font-family: "Kanit", serif;
+  color: #222222;
+  font-size: 30px;
+  font-weight: 700;
+}
+.DailyCG .swiper .DailyCGaDetailCardAll .DailyCGCard .DailyCGDetail p {
+  font-family: "Kanit", serif;
+  color: #8E8D8A;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 24px;
+  text-align: center;
+}
+.DailyCG .swiper .DailyCGaDetailCardAll .DailyCGCard .DailyCGDetail p span {
+  font-family: "Kanit", serif;
+  color: #8E8D8A;
+  font-size: 18px;
+  font-weight: 500;
+}
+.DailyCG .swiper-button-prev, .DailyCG .swiper-button-next {
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+  cursor: pointer;
+}
+
 .shortsDesign {
   overflow-x: hidden;
   background-color: #222222;
