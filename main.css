@@ -309,7 +309,7 @@ body {
   margin: auto;
 }
 .DailyCG .swiper .DailyCGaDetailCardAll .DailyCGCard {
-  width: 480px;
+  width: 640px;
   height: auto;
   border-radius: 12px;
   overflow: hidden;
@@ -322,8 +322,8 @@ body {
   text-decoration: none;
 }
 .DailyCG .swiper .DailyCGaDetailCardAll .DailyCGCard img {
-  width: 480px;
-  height: 270px;
+  width: 640px;
+  height: 360px;
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
